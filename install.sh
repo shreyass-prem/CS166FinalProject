@@ -6,6 +6,12 @@ then
     exit 1
 fi
 
+add-apt-repository universe
+apt update
+apt install python2
+curl https://bootstrap.pypa.io/pip/2.7/get-pip.py --output get-pip.py
+python2 get-pip.py
+
 if [[ $# -eq "1" && $1 -eq "0" ]]
 then
     echo "Running in unattended mode. Assuming config.py exists. Splunk, ELK and UFW will be skipped."
@@ -59,7 +65,7 @@ fi
 
 if [ -f /etc/debian_version ]; then
     apt-get update && apt-get upgrade -y
-    apt-get install -y python-pip
+    apt-get install -y 
     pip install --upgrade pip
     apt-get install apt-transport-https -y
     apt-get install build-essential -y #needed for building some python modules
