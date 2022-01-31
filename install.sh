@@ -11,6 +11,7 @@ apt update
 apt install python2
 curl https://bootstrap.pypa.io/pip/2.7/get-pip.py --output get-pip.py
 python2 get-pip.py
+cp GeoLite2-City.mmdb /home/kmj/mhn/server/../../
 
 if [[ $# -eq "1" && $1 -eq "0" ]]
 then
