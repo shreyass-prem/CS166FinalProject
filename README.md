@@ -1,20 +1,21 @@
 # Modern HoneyNet (MHN) Adapted Installation
 Ubuntu 20.04 compatible. <br>
-This repo has been originally forked from https://github.com/pwnlandia/mhn, which does NOT support Ubuntu 20.04. <br>
+This repo has been originally forked from https://github.com/pwnlandia/mhn, which does NOT support Ubuntu 20.04. <be>
+There was an incompatibility with an outdated version of python2. This adaptation modifies the installation files to be compatible with python3.
 
-Install MHN <br>
+Step 1: Install MHN <br>
 ```
 $ cd /opt/
 $ sudo git clone https://github.com/shreyass-prem/CS166FinalProject.git
 $ cd mhn/
 ```
 
-Now, run the following script to complete the installation. <br>
+Step 2: Run the following script to complete the installation. <br>
 ```
 $ sudo ./install.sh
 ```
 
-Configuration:
+Step 3: Configuration:
 ```
 ===========================================================
 MHN Configuration
@@ -34,4 +35,4 @@ Mail default sender [""]:
 Path for log file ["mhn.log"]:
 ```
 
-Furthermore, this repo contains visualization code to display statistics of cyber-attackers across the deployed honeypots.
+This repository contains visualization code to display statistics about the cyber-attackers. The data is specific to the deployed honeypots in our experiments.
