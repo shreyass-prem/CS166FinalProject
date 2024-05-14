@@ -1,7 +1,8 @@
 # Modern HoneyNet (MHN) Adapted Installation
 Ubuntu 20.04 compatible. <br>
 This repo has been originally forked from https://github.com/pwnlandia/mhn, which does NOT support Ubuntu 20.04. <br>
-There was an incompatibility with an outdated version of python2. This adaptation modifies the installation files to be compatible with python3. <be>
+Ubuntu 20.04 uses Python 3 to install its modules. However, the old repository of Modern HoneyNet uses Python 2 and introduces compatibility issues. <br>
+This adaptation modifies the installation files to be compatible with Python 3. <br>
 
 Step 1: Install MHN <br>
 ```
